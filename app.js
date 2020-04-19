@@ -13,15 +13,15 @@ var express = require("express"),
     // seedDB();
     var middleware=require("./middleware");
     
-mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb+srv://rishabh:rusty@cluster0-rvyxk.mongodb.net/test?retryWrites=true&w=majority",{
-// 	useNewUrlParser: true,
-// 	useCreateIndex: true
-// }).then(() => {
-// 	console.log('Connected to DB!');
-// }).catch(err => {
-// 	console.log('ERROR:', err.message);
-// });
+// mongoose.connect(process.env.DATABASEURL);
+mongoose.connect("mongodb+srv://rishabh:rusty@cluster0-rvyxk.mongodb.net/test?retryWrites=true&w=majority",{
+	useNewUrlParser: true,
+	useCreateIndex: true
+}).then(() => {
+	console.log('Connected to DB!');
+}).catch(err => {
+	console.log('ERROR:', err.message);
+});
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
