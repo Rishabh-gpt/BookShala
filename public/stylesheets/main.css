@@ -1,0 +1,21 @@
+.thumbnail img{
+    width:100%;
+}
+#temp{
+    margin-left:80%;
+}
+.thumbnail{
+    padding  :0;
+}
+#delete-form{
+    display: inline;
+}  
+#comment-edit-button{
+    font-size :0.5em;
+    font-weight:bold;
+}
+#comment-delete-button{
+     font-size :0.5em;
+    font-weight:bold;
+    
+}
