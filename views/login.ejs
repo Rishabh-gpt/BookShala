@@ -1,9 +1,17 @@
 <%- include ('./partials/header') %>
-
-<h1>Login</h1>
-<form action="/login" method="POST">
-    <input type="text" name="username" placeholder="username">
-<input type="password" name="password" placeholder="password">
-<button>Log-In</button>
-</form>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+            <section class='login' id='login'>
+                             <div class='head'>
+                                     <img src="https://pxntxs.github.io/templates/login-page/i/telescope.png">
+                                    <h1 class='company'>Login to  Explore</h1>
+                              </div>
+                              <div class='form'>
+                                     <form action="/login" method="POST">
+                                    <input type="text" class='text' name="username" placeholder="username"><br>
+                                     <input type="password" class="password" name="password" placeholder="password">
+                                    <button class='btn-login'>Log-In</button>
+                                 </form>
+                        </div>        
+                </section>
  <%- include ('./partials/footer') %>

@@ -1,16 +1,18 @@
 <%- include ('../partials/header') %>
-  
+  <link rel="stylesheet" hrref="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="container">
         <header class="jumbotron">
             <div>
-                 <h1> This is the campgrounds page<h1> 
-           <p>Campgounds from all over india</p>
-            <p><a class="btn btn-primary" href="/campgrounds/new">Add new</a></p>
-            
+                          <div class="features-icons-icon d-flex">
+                                  <span class="glyphicon glyphicon-book"></span>
+                         </div>
+                         
+                         <div>
+                                <h1>Our Library <em style="font-size:0.7em;color:grey">  We have thousands of books here</em><h1> 
+                                <p><a class="btn btn-primary" href="/campgrounds/new">Add new</a></p>
+                         </div>
             </div> 
-          
         </header>
-        
        <div class="row text-center" style="display:flex;flex-wrap:wrap;">
                <%campgrounds.forEach(function(campground){%>
         
