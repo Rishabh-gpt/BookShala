@@ -82,7 +82,7 @@ app.get("/campgrounds/new",middleware.isLoggedIn, function(req, res) {
 app.get("/campgrounds/:id",function(req,res){
     Campground.findById(req.params.id).populate("comments").exec(function(err,foundCampgroud){
        if(err || !foundCampgroud){
-       req.flash("error","This campground does not exist");
+       req.flash("error","This book does not exist");
        res.redirect("back");
        console.log(err);
        }
